@@ -1,10 +1,16 @@
 ---
 layout: default
-title: A Brief Online Guide on Bioinformatics for Olin Students 
+title: A Lightweight Sass Tool Set
 ---
 
 <nav class="bourbon">
-  <h1>Maintained by pinardemetci. Design by the team at <a href="//thoughtbot.com">thoughtbot</a></h1>
+  <ul>
+    <li><a href="//bourbon.io" class="bourbon current">Bourbon</a></li>
+    <li><a href="//neat.bourbon.io" class="neat">Neat</a></li>
+    <li><a href="//bitters.bourbon.io" class="bitters">Bitters</a></li>
+    <li><a href="//refills.bourbon.io" class="refills">Refills</a></li>
+  </ul>
+  <h1>Maintained by the design team at <a href="//thoughtbot.com">thoughtbot</a></h1>
 </nav>
 
 <div class="container">
@@ -206,8 +212,8 @@ $ sass --watch stylesheets/sass:stylesheets
         <h5>Other Commands</h5>
         <p>See the complete list of tools available via the <a href="//github.com/thoughtbot/bourbon/wiki/Command-Line-Interface">Command Line Interface</a>.</p>
 {% highlight powershell %}
-$ ssh -X username@evol5.mbl.edu
-$ ssh -X username@minnie
+$ bourbon help
+$ bourbon update
 {% endhighlight %}
 
       </section>
