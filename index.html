@@ -20,7 +20,7 @@ title: A Brief Online Guide on Bioinformatics for Olin Students
 <div class="content-wrapper">
   <section class="demo">
     <div class="container">
-      <h2>A simple and lightweight mixin library for Sass.</h2>
+      <h2>A Brief Online Guide to Bioinformatics for Olin Students.</h2>
 
       <div class="browser-wrapper">
       </div>
@@ -154,55 +154,7 @@ h1 {
 gem 'bourbon'
 {% endhighlight %}
 
-        <p>Then run:</p>
-{% highlight powershell %}
-$ bundle install
-{% endhighlight %}
-
-        <p>Restart your server. Then rename <code>application.css</code> to <code>application.scss</code>:</p>
-{% highlight powershell %}
-mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss
-{% endhighlight %}
-
-        <p>Delete the sprocket directive in application.scss:</p>
-{% highlight powershell %}
-*= require_tree .
-{% endhighlight %}
-
-        <p>Import Bourbon at the beginning of <code>application.scss</code>. All additional stylesheets must be imported below Bourbon:</p>
-{% highlight scss %}
-@import "bourbon";
-@import "home";
-@import "users";
-{% endhighlight %}
-      </section>
-
       <section class="install-instructions">
-        <h4>Install for a Non-Rails App</h4>
-        <h5>Installation</h5>
-        <p>Install the gem</p>
-{% highlight powershell %}
-$ gem install bourbon
-{% endhighlight %}
-
-        <p>Install Bourbon into your project’s <code>stylesheets</code> directory by generating the <code>bourbon</code> folder:</p>
-{% highlight powershell %}
-$ bourbon install
-{% endhighlight %}
-        <p>The generated folder will contain all the mixins and other necessary Bourbon files. It is recommended not to add or modify the Bourbon files so that you can update Bourbon easily.</p>
-        <br>
-
-        <h5>Sass Watch</h5>
-        <p>Run a standard <code>sass --watch</code> from the command line:</p>
-{% highlight powershell %}
-$ sass --watch stylesheets/sass:stylesheets
-{% endhighlight %}
-
-        <p>Lastly, import the mixins at the beginning of your stylesheet(s):</p>
-{% highlight scss %}
-@import "bourbon/bourbon";
-{% endhighlight %}
-
         <h5>Other Commands</h5>
         <p>See the complete list of tools available via the <a href="//github.com/thoughtbot/bourbon/wiki/Command-Line-Interface">Command Line Interface</a>.</p>
 {% highlight powershell %}
@@ -220,30 +172,16 @@ $ ssh -X username@minnie
   <section class="apps">
     <div class="container">
       <h3>Or use it in your favorite companion app</h3>
-        </li>
- 
-  </section>
-
-  <section class="websites">
-    <div class="container">
-      <h3>Who’s using it?</h3>
-    </div>
   </section>
 
   <section class="neat">
     <div class="container">
       <h3>Umm... Hellooo....</h3>
-        </div>
-        <div class="neat-demo">
-          <a href="//neat.bourbon.io">
-            <img src="/images/marketing/neat-demo.svg" alt="Bourbon Neat Demo">
-          </a>
-        </div>
       </div>
     </div>
     <div class="neat-tagline">
       <div class="container">
-        <h3>If you have any questions, please e-mail pinardemetci@gmail.com .</h3>
+        <h6>If you have any questions, please e-mail pinardemetci@gmail.com .</h6>
       </div>
     </div>
   </section>
@@ -252,12 +190,7 @@ $ ssh -X username@minnie
 <footer>
   <div class="container">
     <section class="footer-text">
-      <p>Bourbon is maintained and funded by <a href="//thoughtbot.com">thoughtbot, inc</a>. Tweet your questions or suggestions to <a href="//twitter.com/bourbonsass">@bourbonsass</a> and while you’re at it follow us too.</p>
       <p>Copyright &copy; 2011&ndash;2015 <a href="//thoughtbot.com">thoughtbot, inc</a>. Bourbon is free software, and may be redistributed under the terms specified in the <a href="//github.com/thoughtbot/bourbon/blob/master/LICENSE.md">license</a>.</p>
-    </section>
-    <section class="buttons">
-      <a href="//github.com/thoughtbot/bourbon" class="button installation">Github</a>
-      <a href="/docs/" class="button docs">Docs</a>
     </section>
   </div>
 </footer>
