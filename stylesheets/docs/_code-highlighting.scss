@@ -1,0 +1,42 @@
+//************************************************************************//
+// Code highlighting styling
+//************************************************************************//
+div.highlight {
+  background-color: transparent;
+  width: 100%;
+}
+
+pre {
+  background-color: #FFF;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px darken($background-color, 8%);
+  font-size: $small-font-size;
+  margin: 2.5em 0 1em 0;
+  overflow: auto;
+  padding: 1.5em 1em;
+  @include transition;
+  white-space: pre;
+  word-wrap: normal;
+
+  // render a nice scrollbar in overflowed pre area's
+  &::-webkit-scrollbar {
+    height: 7px;
+    -webkit-appearance: none;
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background-color: darken($background-color, 10%);
+      border-radius: 4px;
+      box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+  &::-webkit-scrollbar-corner {
+  }
+}
+
+p code, ul code, ol code {
+  background-color: $background-color;
+  border: 1px solid $base-border-color;
+  color: hsl(0, 0%, 27%);
+  padding: 0 .2em;
+}

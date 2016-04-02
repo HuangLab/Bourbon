@@ -1,0 +1,127 @@
+//************************************************************************//
+// Global styles
+//************************************************************************//
+div.main-content {
+  @include calc(width, '100% - #{$docs-nav-width}');
+  height: 100%;
+  margin-left: $docs-nav-width;
+
+  body.docset & {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .docset-title {
+    text-align: center;
+
+    img {
+      max-width: 300px;
+    }
+  }
+}
+
+div.main-inner {
+  margin: 0 auto;
+  width: 100%;
+
+  h2.tagline {
+    margin: 0;
+  }
+
+  // Top Level Section
+  //************************************************************************//
+  h1 {
+    color: $base-font-color-alt;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1em;
+    margin: 0;
+    padding: 2em 0;
+    text-align: center;
+    text-shadow: 0 1px 0 white;
+    text-transform: uppercase;
+  }
+}
+
+div.docset-content {
+  @extend div.main-inner;
+  float: left;
+  width: 100%;
+
+  h1 {
+    text-align: left;
+  }
+
+  section.intro-wrapper {
+    article {
+      text-align: left;
+    }
+  }
+}
+
+section > article {
+  @include transition;
+  border-top: 1px darken($background-color, 7%) solid;
+  padding: 4em 15%;
+
+  @media only screen and (min-width: $large-screen) {
+    padding: 4em 23%;
+  }
+
+  // Title bar with multiple link support
+  //************************************************************************//
+  header.title-bar {
+    @include clearfix;
+    margin-bottom: 1em;
+  }
+
+  h2.title {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  // View Source and Spec Links
+  //************************************************************************//
+  a.view-source, a.view-spec {
+    @include transition;
+    color: hsl(43, 13%, 75%);
+    float: right;
+    font-family: "proxima-nova-soft", $helvetica;
+    font-size: $small-font-size;
+    font-weight: bold;
+    line-height: 2.65em;
+    margin-top: 5px;
+    text-shadow: 0 1px 0 white;
+    text-transform: capitalize;
+
+    &:hover {
+      border-radius: 20px;
+      color: hsl(43, 13%, 60%);
+    }
+  }
+
+  a.view-spec {
+    margin-right: 20px;
+  }
+}
+
+
+// Intro Text
+//************************************************************************//
+section.intro-wrapper {
+  article {
+    background: none;
+    border: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+// Target Styles
+//************************************************************************//
+article {
+  &:target {
+    box-shadow: inset 4px 0 0px 0 $orange;
+    @include transition(all 0.3s);
+  }
+}

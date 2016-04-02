@@ -1,0 +1,14 @@
+<article id="background" data-type="mixin">
+  <header class="title-bar">
+    <h2 class="title">Background</h2>
+    <a class="view-source" href="//github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/css3/_background.scss">View source</a>
+    <a class="view-spec" href="//developer.mozilla.org/en-US/docs/Web/CSS/background">View spec</a>
+  </header>
+  <p>The <code>background</code> mixin is used for adding multiple backgrounds using shorthand notation.</p>
+
+{% highlight scss %}
+@include background(linear-gradient(red, green) left repeat);
+@include background(linear-gradient(red, green) left repeat, radial-gradient(red, orange));
+@include background(url("/images/a.png"), linear-gradient(red, green), center no-repeat orange scroll);
+{% endhighlight %}
+</article>

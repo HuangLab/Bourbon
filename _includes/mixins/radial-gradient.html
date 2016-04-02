@@ -1,0 +1,19 @@
+<article id="radial-gradient" data-type="mixin">
+  <header class="title-bar">
+    <h2 class="title">Radial Gradient</h2>
+    <a class="view-source" href="//github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/css3/_radial-gradient.scss">View source</a>
+    <a class="view-spec" href="//developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient">View spec</a>
+  </header>
+  <p>Takes up to 10 gradients. See also the <a href="#background-image">Background Image mixin</a>.</p>
+  <p>This mixin will output a fallback <code>background-color: #first-color;</code> declaration. A <code>$fallback</code> argument can be passed to change the fallback color.</p>
+
+{% highlight scss %}
+@include radial-gradient(#1e5799, #3dc3d1);
+@include radial-gradient(#1e5799, #3dc3d1, $fallback: red);
+@include radial-gradient(circle at 50% 50%, #eee 10%, #1e5799 30%, #efefef);
+{% endhighlight %}
+
+  <h3>Demo</h3>
+  <section class="demo">
+  </section>
+</article>

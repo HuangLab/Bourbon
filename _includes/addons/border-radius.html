@@ -1,0 +1,29 @@
+<article id="border-radius" data-type="mixin">
+  <header class="title-bar">
+    <h2 class="title">Border Radius (Shorthand)</h2>
+    <a class="view-source" href="//github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/addons/_border-radius.scss">View source</a>
+  </header>
+  <p>These mixins provide a shorthand syntax to target and add border radii to <em>both corners</em> on one side of a box.</p>
+
+{% highlight scss %}
+@include border-top-radius(5px);
+@include border-right-radius(5px);
+@include border-bottom-radius(5px);
+@include border-left-radius(5px);
+{% endhighlight %}
+
+  <h3>Example</h3>
+{% highlight scss %}
+.element {
+  @include border-top-radius(5px);
+}
+{% endhighlight %}
+
+  <h3>CSS Output</h3>
+{% highlight scss %}
+.element {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+{% endhighlight %}
+</article>

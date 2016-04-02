@@ -1,0 +1,37 @@
+<article id="placeholder" data-type="mixin">
+  <header class="title-bar">
+    <h2 class="title">Placeholder</h2>
+    <a class="view-source" href="//github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/css3/_placeholder.scss">View source</a>
+    <a class="view-spec" href="//developer.mozilla.org/en-US/docs/Web/CSS/::-moz-placeholder">View spec</a>
+  </header>
+  <p>Outputs vendor-prefixed placeholders for styling. Must be nested in a rule-set.</p>
+
+{% highlight scss %}
+input {
+  width: 300px;
+
+  @include placeholder {
+    color: red;
+  }
+}
+{% endhighlight %}
+  <h3>CSS Output</h3>
+{% highlight scss %}
+input {
+  width: 300px;
+}
+
+input::-webkit-input-placeholder {
+  color: red;
+}
+input:-moz-placeholder {
+  color: red;
+}
+input::-moz-placeholder {
+  color: red;
+}
+input:-ms-input-placeholder {
+  color: red;
+}
+{% endhighlight %}
+</article>

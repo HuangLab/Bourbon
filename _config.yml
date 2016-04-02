@@ -1,0 +1,11 @@
+# Site settings
+title: Bourbon
+description: "Bourbon is a lightweight Sass tool set that helps you write more effective stylesheets."
+
+# Build settings
+exclude: [features/, gh-docs/, lib/, LICENSE.md, Rakefile, README.md]
+markdown: kramdown
+safe: false
+sass:
+  sass_dir: stylesheets
+  style: :compressed

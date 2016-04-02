@@ -1,0 +1,24 @@
+<article id="prefixer" data-type="mixin">
+  <header class="title-bar">
+    <h2 class="title">Prefixer</h2>
+    <a class="view-source" href="//github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/addons/_prefixer.scss">View source</a>
+  </header>
+  <p>The prefixer is for generating vendor prefixed declarations. The prefixer accepts the following prefixes: <code>webkit</code> <code>moz</code> <code>ms</code> <code>o</code> <code>spec</code>.</p>
+
+{% highlight scss %}
+@mixin box-sizing($box) {
+  @include prefixer(box-sizing, $box, webkit moz spec);
+}
+{% endhighlight %}
+
+  <h3>CSS Output</h3>
+{% highlight scss %}
+-webkit-box-sizing: $box;
+   -moz-box-sizing: $box;
+        box-sizing: $box;
+{% endhighlight %}
+  <section class="demo">
+    <div class="example double"></div>
+  </section>
+</article>
+

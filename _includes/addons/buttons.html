@@ -1,0 +1,55 @@
+<article id="buttons" data-type="mixin">
+  <header class="title-bar">
+    <h2 class="title">Button</h2>
+  </header>
+  <p class="alert"><b>Deprecation Warning:</b> The <code>button</code> mixin has been deprecated and will be removed in the next major version release. Take a look at <a href="//bitters.bourbon.io">Bitters</a>, which includes basic styles for buttons.</p>
+  <p>The button add-on provides well-designed buttons with a single line in your CSS.</p>
+  <p>The mixin supports a style parameter and an optional color argument. The available button styles are:</p>
+  <ul>
+    <li>
+      <code>simple</code> (default)
+    </li>
+    <li>
+      <code>shiny</code>
+    </li>
+    <li>
+      <code>pill</code>
+    </li>
+  </ul>
+
+  <section class="demo">
+    <div class="wrapper">
+      <h3>Simple Button Style</h3>
+      <p>The mixin can be called with no arguments, which will render a blue button with the <code>simple</code> style.</p>
+{% highlight scss %}
+button {
+  @include button;
+}
+{% endhighlight %}
+      <button class="example-1">Simple button</button>
+    </div>
+
+    <div class="wrapper">
+      <h3>Pill Button Style</h3>
+{% highlight scss %}
+button {
+  @include button(pill);
+}
+{% endhighlight %}
+      <button class="example-2">Pill Button</button>
+    </div>
+
+    <div class="wrapper">
+      <h3>Shiny Button Style</h3>
+      <p>Create beautiful buttons by defining a style and color argument; using a single color, the mixin calculates the gradient, borders, box shadow, text shadow and text color of the button. The mixin will change the text to be light when on a dark background, and dark when on a light background.</p>
+
+{% highlight scss %}
+button {
+  @include button(shiny, #ff0000);
+}
+{% endhighlight %}
+      <button class="example-3">Shiny Button</button>
+    </div>
+  </section>
+
+</article>

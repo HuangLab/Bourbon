@@ -1,0 +1,25 @@
+<article id="position" data-type="mixin">
+  <header class="title-bar">
+    <h2 class="title">Position</h2>
+    <a class="view-source" href="//github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/addons/_position.scss">View source</a>
+  </header>
+  <p>A shorthand notation for positioning elements.</p>
+  <p>The first argument is optional and defaults to <code>relative</code>. The second argument is a space-delimited list of values for <code>top</code>, <code>right</code>, <code>bottom</code> and <code>left</code>; it follows the standard CSS shorthand notation.</p>
+  <p><strong>Note:</strong> <code>null</code> values will be ignored. In the example below, this means that declarations will <em>not</em> be generated for the <code>right</code> and <code>bottom</code> properties.</p>
+
+{% highlight scss %}
+.element {
+  @include position(relative, 0 null null 10em);
+}
+{% endhighlight %}
+
+<h3>CSS Output</h3>
+
+{% highlight css %}
+.element {
+  position: relative;
+  top: 0;
+  left: 10em;
+}
+{% endhighlight %}
+</article>
